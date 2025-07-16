@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Heart Break</title>
+  <link rel="stylesheet" href="./style.css" />
+</head>
+<body>
+  <div class="heart-container">
+    <img class="heart-left" src="left.png" alt="Left Heart" />
+    <img class="heart-right" src="right.png" alt="Right Heart" />
+  </div>
+
+  <script>
+    window.addEventListener("DOMContentLoaded", () => {
+      document.querySelector(".heart-left").classList.add("break-left");
+      document.querySelector(".heart-right").classList.add("break-right");
+      setTimeout(() => {
+        window.location.href = "broken.html";
+      }, 4000);
+    });
+  </script>
+</body>
+</html>
